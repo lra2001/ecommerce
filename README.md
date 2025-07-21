@@ -3,7 +3,7 @@
 ### Installation
 - [Download Visual Studio Code](https://code.visualstudio.com/download)
 - [Download GitHub Desktop](https://desktop.github.com/download/)
-- [Python - Prviously Installed](https://www.python.org/downloads/)
+- [Download Python](https://www.python.org/downloads/)
 - [Flask Installation](https://flask.palletsprojects.com/en/stable/installation/)
 - [Flask Quickstart](https://flask.palletsprojects.com/en/stable/quickstart/)
 - [Download pgAdmin](https://www.pgadmin.org/download/)
@@ -11,5 +11,24 @@
 - [SQL Alchemy - Installation Guide](https://docs.sqlalchemy.org/en/20/intro.html#installation)
 - [python-dotenv 1.1.1](https://pypi.org/project/python-dotenv/)
 
+### Errors
+- [ImportError: "flask_sqlalchemy" could not be resolved](https://stackoverflow.com/questions/64981804/importerror-flask-sqlalchemy-could-not-be-resolved)
+
 ### Code
 - [CSS @media rule](https://www.w3schools.com/cssref/atrule_media.php)
+
+### Images
+- [Convert image type to WebP](https://www.freeconvert.com/webp-converter)
+- [Image Resizer](https://imageresizer.com/)
+- [Create Logo](https://www.canva.com/)
+- [Convert to favicon](https://favicon.io/favicon-converter/)
+
+### Project
+- Set up the Flask Environment:
+  - Initialize a virtual environment by running the command: python -m venv venv
+  - Activate the virtual environment on Windows: venv\Scripts\activate
+  - Install Flask by running the command: pip install flask.
+- Create Flask Application Files:
+  - Create a new Python file named app.py
+- Update Python
+  - python.exe -m pip install --upgrade pip

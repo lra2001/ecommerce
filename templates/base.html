@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}iGo Space Travel{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <!-- Ensure logo and title are aligned together -->
+            <div class="brand">
+                <a href="{{ url_for('home') }}">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+                </a>
+                <h1 class="site-title">iGo Space Travel</h1>
+            </div>
+            <!-- Hamburger icon for smaller screens -->
+            <button class="hamburger">&#9776;</button>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a>
+            <a href="/second_page" class="{% if active_page == 'second_page' %}active{% endif %}">second_page</a>
+            <a href="/third_page" class="{% if active_page == 'third_page' %}active{% endif %}">third_page</a>
+            <a href="/fourth_page" class="{% if active_page == 'fourth_page' %}active{% endif %}">fourth_page</a>
+            <a href="/contact" class="{% if active_page == 'contact' %}active{% endif %}">contact</a>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 iGo Space Travel. All rights reserved.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
