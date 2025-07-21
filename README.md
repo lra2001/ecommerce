@@ -32,3 +32,6 @@
   - Create a new Python file named app.py
 - Update Python
   - python.exe -m pip install --upgrade pip
+- Install SQLAlchemy
+  - pip install SQLAlchemy
+  - pip install flask-sqlalchemy
